@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;700&display=swap');
 
+/*html {
+    position: relative;
+    min-height: 100%;
+}*/
+
 body {
     font-family: 'Outfit', sans-serif;
     background-color: hsl(212, 45%, 89%);
@@ -43,10 +48,24 @@ h1 {
 }
 
 footer {
-    font-size: 0.75rem; 
     text-align: center; 
+    position: static;
+    bottom: 0;
+    font-size: 0.75rem; 
 }
 
 footer a {
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 900px) {
+    .main-card {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-card {
+        width: 45%;
+    }
 }
